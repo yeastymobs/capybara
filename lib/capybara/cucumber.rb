@@ -11,6 +11,10 @@ Before('@javascript') do
   Capybara.current_driver = Capybara.javascript_driver
 end
 
+Before('@facebook') do
+  Capybara.current_driver = :facebook
+end
+
 Before('@selenium') do
   Capybara.current_driver = :selenium
 end

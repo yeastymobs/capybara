@@ -30,6 +30,8 @@ module Capybara
         Capybara::Driver::Celerity.new(app)
       when :culerity
         Capybara::Driver::Culerity.new(app)
+      when :facebook
+        Capybara::Driver::Facebook.new(app)
       else
         raise Capybara::DriverNotFoundError, "no driver called #{mode} was found"
       end
@@ -49,6 +51,10 @@ module Capybara
 
     def visit(path)
       driver.visit(path)
+    end
+    
+    def merge_params!(params)
+      driver.merge_params!(params)
     end
 
     def click(locator)

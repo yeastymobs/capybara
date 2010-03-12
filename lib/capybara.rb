@@ -44,6 +44,7 @@ module Capybara
     autoload :Celerity, 'capybara/driver/celerity_driver'
     autoload :Culerity, 'capybara/driver/culerity_driver'
     autoload :Selenium, 'capybara/driver/selenium_driver'
+    autoload :Facebook, 'capybara/driver/facebook_driver'
   end
 end
 

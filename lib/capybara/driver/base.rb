@@ -34,4 +34,7 @@ class Capybara::Driver::Base
   def cleanup!
   end
 
+  def merge_params!(params={})
+    raise NotImplementedError
+  end
 end
