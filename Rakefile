@@ -7,7 +7,7 @@ Hoe.plugin :newgem
 
 # Generate all the Rake tasks
 # Run 'rake -T' to see list of generated tasks (from gem root directory)
-Hoe.spec 'capybara' do
+Hoe.spec 'capybara-facebook' do
   developer 'Jonas Nicklas', 'jonas.nicklas@gmail.com'
 
   self.readme_file      = 'README.rdoc'
